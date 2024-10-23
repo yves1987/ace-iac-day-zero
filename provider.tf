@@ -1,7 +1,24 @@
+terraform {
+  required_providers {
+    google = {
+      source = "hashicorp/google"
+#      version = "~> 1.0"
+    }
+    aws = {
+      source = "hashicorp/aws"
+      version = "~> 5.67.0"
+    }
+    aviatrix = {
+      source  = "AviatrixSystems/aviatrix"
+      version = "3.1.5" # this MUST be set as seen here
+    }
+  }
+}
 provider "aviatrix" {
   controller_ip = var.controller_ip
   username      = var.username
   password      = var.password
+  skip_version_validation = true
 }
 
 provider "aws" {
