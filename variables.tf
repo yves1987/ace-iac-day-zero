@@ -3,9 +3,11 @@ variable "username" {
 }
 
 variable "password" {
+  default = "Lv3bell!!3"
 }
 
 variable "controller_ip" {
+  default = "35.203.89.179"
 }
 
 variable "ace_password" {
