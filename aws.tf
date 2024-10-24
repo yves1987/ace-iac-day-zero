@@ -31,7 +31,6 @@ EOF
 }
 
 module "security_group_1" {
-  source              = "terraform-aws-modules/security-group/aws"
   version             = "~> 3.0"
   name                = "security_group_spoke1"
   description         = "Security group for example usage with EC2 instance"
