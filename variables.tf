@@ -9,6 +9,7 @@ variable "controller_ip" {
 }
 
 variable "ace_password" {
+  default = "casurg"
 }
 
 variable "aws_account_name" {
