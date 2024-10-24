@@ -95,4 +95,3 @@ variable "ha_enabled" {
   type    = bool
   default = false
 }
-
